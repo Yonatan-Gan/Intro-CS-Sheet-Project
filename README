@@ -1,0 +1,36 @@
+# Python Spreadsheet Application
+
+A lightweight, Excel-like desktop application built from scratch using Python and Tkinter. This project was developed as a capstone for an Introduction to Computer Science course to demonstrate Object-Oriented Programming (OOP), data structures, and state management.
+
+## 🚀 Features
+* **Interactive GUI:** Built with Tkinter, featuring a dynamic grid where users can add rows and columns on the fly.
+* **Custom Calculation Engine:** Evaluates basic arithmetic (`+`, `-`, `*`, `/`) and handles errors like division by zero or invalid types.
+* **Aggregate Functions:** Select dynamic cell ranges to calculate `SUM`, `AVG`, `MIN`, and `MAX`.
+* **Data Persistence:** Save your current spreadsheet state to a JSON file and load it back in later sessions without losing formula dependencies.
+* **Cell Dependencies:** Function cells dynamically update when the cells in their target range change.
+
+## 🛠️ Technologies Used
+* **Language:** Python 3
+* **GUI Framework:** Tkinter
+* **Data Serialization:** JSON
+* [cite_start]**Dependencies:** `numpy`, `pandas`, `python-dateutil`, `pytz`, `six` [cite: 1]
+
+## 💻 How to Run
+1. Clone the repository to your local machine.
+2. Ensure you have Python 3 installed.
+3. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+
+Run the main application file:
+    Bash
+
+    python3 main.py
+
+📝 Usage
+
+    Creating a Sheet: Upon launching, enter the desired width and length to generate a new grid.
+
+    Calculations: Use the command line at the bottom of the control window to enter formulas (e.g., A1 + 5).
+
+    Updating Cells: Note that the sheet grid updates only when you press <Enter> after typing in a cell.
